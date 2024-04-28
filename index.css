@@ -8,6 +8,7 @@ body{
     width: 200px;
     display: block;
     margin: 20px auto;
+    box-shadow: 2px solid black;
 }
 .title{
     text-align: center;
