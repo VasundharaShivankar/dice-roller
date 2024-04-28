@@ -10,16 +10,16 @@
 </head>
 <body>
     <h1 class="title">DICE ROLLER</h1>
-    <img src="./img/six.png" alt="DICE" class="img-dice" id="img-dice"/>
-    <button  onclick="roll()" class="btn-roll" ondblclick="roll()">ROLL THE DIE!</button><br/>
+    <img src="./img/six.png" alt="DICE" class="img-dice" id="dice-img"/>
+    <button  onclick="rollDice()" class="btn-roll" ondblclick="roll()">ROLL THE DIE!</button><br/>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
-        function roll(){
+        function rollDice(){
         const min = 1;
         const max = 6;
         const randomNumber=Math.round(Math.random()*(max-min))+min;
-        const img=document.getElementById("img-dice");
+        const img=document.getElementById("dice-img");
         switch(randomNumber){
             case 1:
                 img.src="./img/one.png";
